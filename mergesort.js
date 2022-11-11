@@ -1,7 +1,6 @@
 
 const merge = (leftArr, rightArr) => {
 	//To merge the both incoming arrays
-	if(leftArr==undefined||rightArr==undefined) return;
 	const result = [];
 
 	let iL = 0;
@@ -37,7 +36,6 @@ function mergesort(arr){
     let secondHalf = arr.slice(half);
     let sortedLeft= mergesort(firstHalf);
     let sortedRight= mergesort(secondHalf);
-    console.log(sortedLeft,sortedRight)
    	let mergedarray= merge(sortedLeft,sortedRight);
     return mergedarray;
 }
