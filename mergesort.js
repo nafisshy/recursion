@@ -26,7 +26,6 @@ const merge = (leftArr, rightArr) => {
 		result.push(rightArr[iR]);
 		iR++;
 	}
- console.log('mergedonce');
 	return result;
 };
 
